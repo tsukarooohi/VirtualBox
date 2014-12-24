@@ -142,12 +142,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     recipe[yum-epel]
     recipe[user]
     recipe[set-directory]
-    recipe[php-env::php55]
     recipe[nginx]
+    recipe[php-env::php55]
     recipe[mysql]
-    recipe[phpmyadmin]   
+    recipe[phpmyadmin]
   ]
   end
+    
+    
 end
 
-end
